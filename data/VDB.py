@@ -28,7 +28,7 @@ class VDB():
         self.collection_sentence_dict_1 = self.collection_map["sentences_1adj"].get()
         self.collection_sentence_dict_2 = self.collection_map["sentences_2adj"].get()
 
-        self.json_data = json.load(open(f"{PROJECT_PATH}/src/scene_gen/data/text/noun_adj_pairs.json"))
+        self.json_data = json.load(open(f"{PROJECT_PATH}/data/text/noun_adj_pairs.json"))
         self.json_len = len(self.json_data)
 
         self.lpips_loss = lpips.LPIPS(net='alex')

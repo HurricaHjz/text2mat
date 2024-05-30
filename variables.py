@@ -1,7 +1,8 @@
 import os
 
 
-def find_project_full_path(project_dir="lang2mat"):
+# def find_project_full_path(project_dir="lang2mat"):
+def find_project_full_path(project_dir="text2mat"):
     r"""Find the full path of `project_dir`.
 
     Parameters
@@ -24,7 +25,8 @@ def find_project_full_path(project_dir="lang2mat"):
     full_path = os.getcwd()
     assert (
         project_dir in full_path
-    ), f"It needs to be called from within {project_dir} directory."
+    ), f"{full_path}  needs to be called from within {project_dir} directory."
+    print(os.path.join(full_path[: full_path.find(project_dir)], project_dir))
     return os.path.join(full_path[: full_path.find(project_dir)], project_dir)
 
 
