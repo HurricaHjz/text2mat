@@ -1,7 +1,8 @@
 import os
 
 
-def find_project_full_path(project_dir="lang2mat"):
+# def find_project_full_path(project_dir="lang2mat"):
+def find_project_full_path(project_dir="text2mat"):
     r"""Find the full path of `project_dir`.
 
     Parameters
@@ -55,8 +56,9 @@ LOCAL_OMNI_PREVIEW_PATH = f"{PROJECT_PATH}/data/UsdPreviewSurface.mdl"
 OMNIVERSE_MODELS_PATH = "persistent/processed/3dmodels"
 OMNIVERSE_MATERIALS_PATH = "persistent/raw/materials"
 
-# Minimal launcher config
-PATH_APP_CONFIG = "/home/ocedron/Research/lang2mat/config/omni.isaac.sim.python.kit"
+# # Minimal launcher config
+# PATH_APP_CONFIG = "/home/ocedron/Research/lang2mat/config/omni.isaac.sim.python.kit"
+PATH_APP_CONFIG = ""
 
 # Stage (SimulationApp defaults)
 DEFAULT_GROUND_PLANE = "/World/defaultGroundPlane"

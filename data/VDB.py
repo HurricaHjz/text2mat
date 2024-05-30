@@ -4,7 +4,7 @@ from variables import PROJECT_PATH
 
 class VDB():
     def __init__(self, clip_version, reset=False):
-        persist_dir = f"{PROJECT_PATH}/src/scene_gen/data/chroma_db/"
+        persist_dir = f"{PROJECT_PATH}/data/chroma_db/"
         self.client = chromadb.Client(chromadb.config.Settings(chroma_db_impl="duckdb+parquet",
                                             persist_directory=persist_dir
                                         ))
