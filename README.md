@@ -11,8 +11,6 @@ C:\Users\jerry\AppData\Local\ov\pkg\isaac_sim-2022.1.1\python.bat -m pip ...
 pip install -r requirements.txt
 pip install -r requirements.txt --use-deprecated=legacy-resolver
 
-pip install chromadb==0.3.29
-
 <!-- # Solve pip version issue
 pip install setuptools==65.5.0 pip==21  
 pip install wheel==0.38.0 -->
@@ -20,8 +18,8 @@ pip install wheel==0.38.0 -->
 pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0+cu113 -f https://download.pytorch.org/whl/torch_stable.html -->
 
 # build aim server
-pip install protobuf==3.20.*
-pip install -U 'mlflow>=1.0.0'
+<!-- pip install protobuf==3.20.*
+pip install -U 'mlflow>=1.0.0' -->
 
 C:\Users\jerry\AppData\Local\ov\pkg\isaac_sim-2022.1.1\python.bat -m pip install chromadb==0.3.29
 C:\Users\jerry\AppData\Local\ov\pkg\isaac_sim-2022.1.1\python.bat -m pip install lpips 

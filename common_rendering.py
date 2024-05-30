@@ -144,7 +144,7 @@ def create_app(config=None):
     sys.path.append(text2scene_abs_path)
     ################## DO NOT ADD IMPORT HERE #################
     from omni.isaac.kit import SimulationApp
-    from variables import PROJECT_PATH
+    from variables import PATH_APP_CONFIG
     launcher_config = {
         "width": res,
         "height": res,
